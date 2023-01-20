@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:  #ebebeb;
+}
+
+/* comienzo del header */
+
+header{
+    background-color:  #EAC926;
+}
+.logo-logo{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 20px;
+}
+.logo{
+    width: 50vw;
+    padding-right: 20px;
+}
+.boton{
+    width: 100%;
+    display: flex;
+    height: 30px;
+    margin-top: 20px;
+}
+.buscador{
+    background-color: #fff;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
+    width: 90%;
+    border: none;
+}
+.icon{
+    width: 10%;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    padding: 1px 5px 0 1px;
+}
+.purchase{
+    text-align: center;
+    margin: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.site{
+    margin-bottom: 20px;
+}
+ul li, li a{
+    list-style: none;
+    text-decoration: none;
+}
+.burger-menu{
+    background-color: #0044aa;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 7px;
+}
+
+/* comienzo del main */
+
+.banner{
+    width: 100%;
+}
+.main{
+    width: 90vw;
+    margin: 0 15px;
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+    color: #666;
+}
+article{
+    border-top: 1px #ebebeb solid;
+    position: relative;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+article p{
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+article i {
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px ;
+}
+.price-discount{
+    display: flex;
+}
+.price{
+    font-size: 18px;
+}
+.discount{
+    font-size: 16px;
+    color: #39b54a;
+}
+.description{
+    font-size: 16px;
+}
+
+.main img{
+    width: 90vw;
+}
+
+/* comienzo del footer */
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 60px;
+}
+footer i{
+    font-size: 2em;
+    color: blue;
+}
+.pay, .shipping, .security {
+    margin: 20px;
+}
+/* medias queries del html HOME*/
+
+/* mobile */
+@media (max-width:760px){
+    ul li, li a, .login, .site{
+        display: none;
+    }
+    .description{
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width: 761px) and (max-width:1023px) and (orientation:landscape){
+    .logo-sec{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo, .boton{
+        width: 25vw;
+    }
+    .boton{
+        height: 30px;
+        margin-top: 20px;
+    }
+    nav{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .site, li a, .login li, .login i, .login{
+        display: flex;
+        color: black;
+    }
+    li{
+        padding-right: 15px;
+    }
+    .login a{
+        padding-right: 10px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    /* comienzo del main */
+    .main{
+        width: 100%;
+    
+    }
+    .lastVisit, .sales{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product_card{
+        width: 40vw;
+        margin: 30px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .product_card img{
+        width: 100%;
+    }
+}
+
+/* desktops */
+
+@media (min-width: 1024px) {
+    .logo-sec{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo, .boton{
+        width: 25vw;
+    }
+    .boton{
+        height: 30px;
+        margin-top: 20px;
+    }
+    nav{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .site, li a, .login li, .login i, .login{
+        display: flex;
+        color: black;
+    }
+    li{
+        padding-right: 15px;
+    }
+    .login a{
+        padding-right: 5px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    /* comienzo del main */
+    .main{
+        width: 100%;
+    
+    }
+    .lastVisit, .sales{
+        display: flex;
+    }
+    .product_card{
+        width: 40vw;
+        margin: 20px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .product_card img{
+        width: 100%;
+    }
+    /* footer */
+    .boxes_footer{
+        display: flex;
+    }
+    .pay, .shipping, .security {
+        margin: 15px;
+    }
+}
+/* estilos del html terminos */
+.box{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.box_box{
+    background-color: #fff;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    border-radius: 10px;
+}
+.box_box img{
+    width: 150px;
+    margin-bottom: 50px;
+}
+.box_box h3{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.box_box p{
+    margin-bottom: 50px ;
+}
+.box_input{
+    margin-right: 15px;
+    border-color: 1px solid #ebebeb;
+    height: 16px;
+    width: 16px;
+}
+.box_boton{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3483fa;
+    border: none;
+    border-radius: 10px;
+}
+.box_boton a{
+    text-decoration: none;
+    color: white;
+}
+.box_boton:hover{
+    background-color: #0044aa;
+    cursor: pointer;
+}
+.box_boton a:hover{
+    color:#EAC926;
+    cursor: pointer;
+}
+
+/* estilos del html REGISTRER */
+.boxRegistrer{
+    display: flex;
+    width: 100%;
+    padding: 70px;
+    justify-content: center;
+}
+.boxForm{
+    margin-left: 70px;
+}
+.boxForm h3{
+    font-size: 23px;
+    text-align: center;
+}
+.boxFieldset, .boxFieldset2{
+    border: none;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.custom-input-file {
+    background-color:#3483fa;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+}
+.custom-input-file .input-file {
+    border:none;
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: -2px;
+    cursor: pointer;
+}
+.custom-input-file:hover{
+    background-color: #0044aa;
+    color:#EAC926;
+}
+.boxFieldset input{
+    border-radius: 3px;
+    border-style: none;
+    width: 80%;
+    padding: 10px;
+}
+.boxFieldset input:focus{
+    outline: none;
+    border: 2px solid #EAC926;
+}
+.boxForm legend{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.boxForm label{
+    margin: 20px 0 10px 0;
+}
+.buttonRegistrer{
+    margin: 20px 0 20px 0;
+    border: none;
+    background-color: #3483fa;
+    width: 80%;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buttonRegistrer:hover{
+    background-color: #0044aa;
+    color:#EAC926;
+    cursor: pointer;
+}
+
+/* estilos del html LOGIN */
+.form-login{
+    display: flex;
+    justify-content: center;
+}
+.form_login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    margin: 30px;
+}
+.form_login label{
+    font-size: 1.5em;
+    margin: 20px;
+    font-weight: 600;
+}
+.form_login-1, .form_login-2{
+    margin: 5px 0 5px 0;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.form_login button{
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3483fa;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.form_login button:hover{
+    background-color: #0044aa;
+    color:#EAC926;
+}
+.form_login input:focus{
+    outline: none;
+    border: 2px solid #EAC926;
+}
+/* media query del html LOGIN */
+
+/* tablet */
+
+@media (min-width: 761px) and (max-width:1023px) and (orientation:landscape){
+    .form_login-1, .form_login-2{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .form_login-1{
+        margin-left: 32px;
+    }
+    .form_login button{
+        width: 50%;
+    }
+}
+@media (min-width: 1024px){
+    .form_login-1, .form_login-2{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .form_login-1{
+        margin-left: 32px;
+    }
+    .form_login button{
+        width: 50%;
+    }
+}
+
+
+
