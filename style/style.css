@@ -389,6 +389,17 @@ footer i{
     font-size: 18px;
     cursor: pointer;
 }
+.buttonRegistrer a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.buttonRegistrer a:hover{
+    color:#EAC926;
+    cursor: pointer;
+}
 .buttonRegistrer:hover{
     background-color: #0044aa;
     color:#EAC926;
@@ -423,13 +434,23 @@ footer i{
 
 .form_login button{
     width: 100%;
-    font-size: 18px;
     border: none;
     border-radius: 5px;
     background-color: #3483fa;
-    color: #fff;
     padding: 10px;
     margin-top: 20px;
+    cursor: pointer;
+}
+.form_login button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form_login button a:hover{
+    color:#EAC926;
     cursor: pointer;
 }
 .form_login button:hover{
